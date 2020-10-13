@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <link rel="stylesheet" href="css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet" />
-  </head>
-
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
   <body>
     
     <!--Шапка сайта-->
@@ -42,24 +41,26 @@
         <!--Список-->
 
         <section class="qualities">
-          <ul class="list">
-            <li>
-              <h2 class="section-title">Внимание к деталям</h2>
-              <p class="section-info">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-            </li>
-            <li>
-              <h3 class="section-title">Пунктуальность</h3>
-              <p class="section-info">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-            </li>
-            <li>
-              <h3 class="section-title">Планирование</h3>
-              <p class="section-info">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-            </li>
-            <li>
-              <h3 class="section-title">Современные технологии</h3>
-              <p class="section-info">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-            </li>
-          </ul>
+          <div class="container">
+            <ul class="list">
+              <li>
+                <h2 class="section-title">Внимание к деталям</h2>
+                <p class="section-info">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+              </li>
+              <li>
+                <h3 class="section-title">Пунктуальность</h3>
+                <p class="section-info">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+              </li>
+              <li>
+                <h3 class="section-title">Планирование</h3>
+                <p class="section-info">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+              </li>
+              <li>
+                <h3 class="section-title">Современные технологии</h3>
+                <p class="section-info">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              </li>
+            </ul>
+          </div>
         </section>
 
 
@@ -78,25 +79,25 @@
         <!--Наша команда-->
 
         <section class="ourteam">
-          <h2 class="section-title main">Наша команда</h2>
+          <h2 class="section-title">Наша команда</h2>
           <ul class="list">
             <li>
-              <img src="./img/img3.jpg" alt="Photo" width="270" />
+              <img class="img" src="./img/img3.jpg" alt="Photo" width="270" />
               <h3 class="section-title">Игорь Демьяненко</h3>
               <p class="section-info">Product Designer</p>
             </li>
             <li>
-              <img src="./img/img4.jpg" alt="Photo" width="270" />
+              <img class="img" src="./img/img4.jpg" alt="Photo" width="270" />
               <h3 class="section-title">Ольга Репина</h3>
               <p class="section-info">Frontend Developer</p>
             </li>
             <li>
-              <img src="./img/img5.jpg" alt="Photo" width="270" />
+              <img class="img" src="./img/img5.jpg" alt="Photo" width="270" />
               <h3 class="section-title">Николай Тарасов</h3>
               <p class="section-info">Marketing</p>
             </li>
             <li>
-              <img src="./img/img6.jpg" alt="Photo" width="270" />
+              <img class="img" src="./img/img6.jpg" alt="Photo" width="270" />
               <h3 class="section-title">Михаил Ермаков</h3>
               <p class="section-info">UI Designer</p>
             </li>
@@ -110,9 +111,10 @@
       <a href="./index.html" class="webstudio-footer">Web<span class="logo">Studio</span></a>
       <address class="adress-footer">
         <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
-        <p><a href="mailto:info@example.com" class="foooter-info">info@example.com</a></p>
+        <p class="mmail"><a href="mailto:info@example.com" class="foooter-info">info@example.com</a></p>
         <p><a href="tel:+380961111111" class="foooter-info">+38 096 111 11 11</a></p>
       </address>
       </footer>
   </body>
 </html>
+

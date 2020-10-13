@@ -1,3 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  /* outline: 2px solid rgb(51, 18, 128); */
+  /* none - щоб забрати рамку */
+}
+
 :root {
   --primary-text-color: rgba(117, 117, 117, 1);
   --title-text-color: rgba(33, 33, 33, 1);
@@ -89,35 +106,39 @@ body {
   color: var(--text-hover-focus);
 }
 
-/* MAIN */
+/* HERO */
 
 .main-section {
   background: var(--main-footer-background-color);
+  text-align: center;
 }
 
 .main-title {
   font-size: 44px;
   font-style: normal;
   font-weight: 900;
-  line-height: 60px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
-
+  /* text-align: center; */
   text-transform: uppercase;
   color: var(--secondary-text-color);
-}
-
-.section-title {
-  color: var(--title-text-color);
+  margin-bottom: 40px;
 }
 
 .button {
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
+  line-height: 1.875;
+  /* display: flex;
+  align-items: center; */
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
@@ -128,11 +149,17 @@ body {
 
 /* СЕКЦІЯ 1 */
 
+.section-title {
+  padding-bottom: 50px;
+  color: var(--title-text-color);
+}
+
 .section-info {
   color: var(--primary-text-color);
 }
 
 .qualities .section-title {
+  padding-bottom: 10px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -161,17 +188,22 @@ body {
 }
 
 /* СЕКЦІЯ 3 */
-.ourteam .main {
+.ourteam .section-title {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .ourteam {
   background: rgba(245, 244, 250, 1);
+}
+
+.ourteam .img {
+  margin-bottom: 30px;
 }
 
 /* ПІДВАЛ*/
@@ -192,6 +224,7 @@ body {
 
   color: #2196f3;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -207,6 +240,7 @@ body {
 
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 9px;
 }
 
 .foooter-info {
@@ -219,4 +253,8 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--footer-text);
+}
+
+.mmail {
+  margin-bottom: 9px;
 }
