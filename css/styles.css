@@ -15,6 +15,10 @@ html {
   /* none - щоб забрати рамку */
 }
 
+img {
+  display: block;
+}
+
 :root {
   --primary-text-color: rgba(117, 117, 117, 1);
   --title-text-color: rgba(33, 33, 33, 1);
@@ -51,7 +55,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   /* identical to box height */
 
   letter-spacing: 0.03em;
@@ -73,7 +77,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -81,7 +85,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
@@ -97,7 +101,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -150,7 +154,7 @@ body {
 /* СЕКЦІЯ 1 */
 
 .section-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   color: var(--title-text-color);
 }
 
@@ -159,11 +163,11 @@ body {
 }
 
 .qualities .section-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -172,29 +176,44 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
 }
 
 /* СЕКЦІЯ 2 */
-.projects .section-title {
+.projects-title {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
 }
 
 /* СЕКЦІЯ 3 */
-.ourteam .section-title {
+.ourteam-title {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+}
+
+.ourteam .section-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
   margin-bottom: 10px;
 }
 
@@ -217,7 +236,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   /* identical to box height */
 
   letter-spacing: 0.03em;
@@ -235,7 +254,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   /* or 171% */
 
   letter-spacing: 0.03em;
@@ -247,7 +266,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   /* or 171% */
   text-decoration: none;
   letter-spacing: 0.03em;
