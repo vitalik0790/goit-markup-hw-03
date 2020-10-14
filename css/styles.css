@@ -127,6 +127,7 @@ body {
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 40px;
+  padding-top: 200px;
 }
 
 .button {
@@ -149,9 +150,26 @@ body {
   background: var(--text-hover-focus);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-bottom: 200px;
 }
 
 /* СЕКЦІЯ 1 */
+
+.container {
+  min-width: 1170px;
+  padding-left: 215px;
+  padding-right: 215px;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.qualities .list {
+  display: flex;
+}
+
+.container .list:not(:last-child) {
+  margin-right: 30px;
+}
 
 .section-title {
   margin-bottom: 50px;
@@ -181,7 +199,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* СЕКЦІЯ 2 */
+/* Чем мы занимаемся */
 .projects-title {
   font-style: normal;
   font-weight: bold;
@@ -193,7 +211,7 @@ body {
   color: var(--title-text-color);
 }
 
-/* СЕКЦІЯ 3 */
+/* Наша команда */
 .ourteam-title {
   font-style: normal;
   font-weight: bold;
