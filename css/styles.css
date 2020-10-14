@@ -42,6 +42,7 @@ body {
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
+  width: 1600px;
 }
 
 /* LOGO */
@@ -113,8 +114,11 @@ body {
 /* HERO */
 
 .main-section {
+  padding-top: 200px;
   background: var(--main-footer-background-color);
   text-align: center;
+  padding-bottom: 200px;
+  width: 1600px;
 }
 
 .main-title {
@@ -127,7 +131,6 @@ body {
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 40px;
-  padding-top: 200px;
 }
 
 .button {
@@ -150,24 +153,33 @@ body {
   background: var(--text-hover-focus);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-bottom: 200px;
 }
 
 /* СЕКЦІЯ 1 */
 
-.container {
-  min-width: 1170px;
-  padding-left: 215px;
-  padding-right: 215px;
-  padding-bottom: 94px;
+.qualities {
   padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
 }
 
 .qualities .list {
   display: flex;
+  justify-content: space-between;
 }
 
-.container .list:not(:last-child) {
+.lii-item {
+  width: 270px;
+  display: block;
+}
+
+.lii-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -199,7 +211,13 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Чем мы занимаемся */
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ!!! */
+
+.projects {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
 .projects-title {
   font-style: normal;
   font-weight: bold;
@@ -211,7 +229,30 @@ body {
   color: var(--title-text-color);
 }
 
-/* Наша команда */
+.projects .list {
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+}
+
+.projects-container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.li-item {
+  display: inline-block;
+  width: 370px;
+}
+
+.li-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* НАША КОМАНДА!!! */
+
 .ourteam-title {
   font-style: normal;
   font-weight: bold;
@@ -235,21 +276,59 @@ body {
   margin-bottom: 10px;
 }
 
+.ourteam .section-info {
+  text-align: center;
+}
+
 .ourteam {
   background: rgba(245, 244, 250, 1);
+  padding: 94px 215px;
 }
 
 .ourteam .img {
   margin-bottom: 30px;
 }
 
+.ourteam .list {
+  display: flex;
+  justify-content: center;
+}
+
+.ourteam-container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.liii-item {
+  display: block;
+  width: 370px;
+  height: 368px;
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.liii-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* ПІДВАЛ*/
 
 .footer {
   background: var(--main-footer-background-color);
+  padding-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 1154px;
 }
 
 .webstudio-footer {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -269,6 +348,7 @@ body {
 }
 
 .street {
+  display: inline-block;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -281,6 +361,7 @@ body {
 }
 
 .foooter-info {
+  display: inline-block;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -293,5 +374,6 @@ body {
 }
 
 .mmail {
+  display: inline-block;
   margin-bottom: 9px;
 }
