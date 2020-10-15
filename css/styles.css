@@ -58,8 +58,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
   /* identical to box height */
-
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 
 .studio {
@@ -109,6 +109,36 @@ body {
 .auth-item:hover,
 .auth-item:focus {
   color: var(--text-hover-focus);
+}
+
+.header-container {
+  display: flex;
+  align-items: flex-start;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-item {
+  margin-left: 50px;
 }
 
 /* HERO */
