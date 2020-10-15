@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   display: block;
 }
@@ -144,6 +149,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+.button-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .projects {
   width: 1200px;
   padding-left: 15px;
@@ -157,9 +169,19 @@ body {
   justify-content: space-between;
 }
 
-/* .projects .list:not(:nth-child(3n)) {
-  margin-right: 30px;
-} */
+.li-item {
+  display: block;
+  width: 370px;
+  /* height: 368px; */
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+}
+
+.li-item:not(:nth-child(n + 7)) {
+  margin-bottom: 30px;
+}
 
 /* Підвал */
 
