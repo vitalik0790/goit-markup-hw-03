@@ -351,10 +351,8 @@ nav ul li:not(:last-child) {
 
 .footer {
   background: var(--main-footer-background-color);
-  padding-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-right: 1154px;
 }
 
 .webstudio-footer {
@@ -406,4 +404,18 @@ nav ul li:not(:last-child) {
 .mmail {
   display: inline-block;
   margin-bottom: 9px;
+}
+
+.footer-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.adress-footer {
+  display: flex;
+  flex-direction: column;
 }
