@@ -43,7 +43,6 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   max-width: 1600px;
-  border: 2px solid;
 }
 
 /* LOGO */
@@ -112,15 +111,20 @@ body {
   color: var(--text-hover-focus);
 }
 
-.header-container {
-  display: flex;
-  align-items: flex-start;
+.container {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: flex-start;
   align-items: center;
+}
+
+.header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -145,10 +149,10 @@ nav ul li:not(:last-child) {
 /* HERO */
 
 .main-section {
-  padding-top: 200px;
   background: var(--main-footer-background-color);
   text-align: center;
   padding-bottom: 200px;
+  padding-top: 200px;
 }
 
 .main-title {
@@ -190,13 +194,6 @@ nav ul li:not(:last-child) {
 .qualities {
   padding-top: 94px;
   padding-bottom: 47px;
-}
-
-.container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
 }
 
 .qualities .list {
@@ -265,13 +262,6 @@ nav ul li:not(:last-child) {
   font-size: 0;
 }
 
-.projects-container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-}
-
 .li-item {
   display: inline-block;
   width: 370px;
@@ -313,6 +303,7 @@ nav ul li:not(:last-child) {
 .ourteam {
   background: rgba(245, 244, 250, 1);
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .ourteam .img {
@@ -322,13 +313,6 @@ nav ul li:not(:last-child) {
 .ourteam .list {
   display: flex;
   justify-content: center;
-}
-
-.ourteam-container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
 }
 
 .liii-item {
@@ -408,10 +392,6 @@ nav ul li:not(:last-child) {
 }
 
 .footer-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }

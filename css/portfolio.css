@@ -31,7 +31,6 @@ body {
   background-color: var(--white-text-background);
   color: var(--main-text-color);
   max-width: 1600px;
-  border: 2px solid;
 }
 
 .list {
@@ -43,6 +42,7 @@ body {
 }
 
 /* ЛОГО */
+
 .webstudio {
   width: 145px;
   height: 31px;
@@ -104,15 +104,20 @@ body {
   color: var(--text-hover-focus);
 }
 
-.header-container {
-  display: flex;
-  align-items: flex-start;
+.container {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: flex-start;
   align-items: center;
+}
+
+.header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -165,6 +170,21 @@ nav ul li:not(:last-child) {
   color: var(--white-text-background);
 }
 
+.main-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.lii-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 /* MAIN */
 
 img {
@@ -190,35 +210,6 @@ img {
   /* identical to box height, or 187% */
   color: var(--main-text-color);
   letter-spacing: 0.03em;
-}
-
-.main-section {
-  padding-top: 94px;
-}
-
-.button-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-.button-container .list {
-  display: flex;
-  justify-content: center;
-}
-
-.lii-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.projects {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 50px;
-  padding-bottom: 94px;
-  margin: 0 auto;
 }
 
 .projects .list {
@@ -305,10 +296,6 @@ img {
 }
 
 .footer-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
