@@ -187,10 +187,6 @@ nav ul li:not(:last-child) {
 
 /* MAIN */
 
-img {
-  margin-bottom: 20px;
-}
-
 .section-title {
   font-style: normal;
   font-weight: bold;
@@ -199,7 +195,6 @@ img {
   /* identical to box height, or 200% */
   color: var(--title-text-color);
   letter-spacing: 0.06em;
-  padding-bottom: 4px;
 }
 
 .section-info {
@@ -225,7 +220,6 @@ img {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  padding-bottom: 30px;
 }
 
 .li-item:not(:nth-child(n + 7)) {
@@ -234,6 +228,8 @@ img {
 
 .projects-info {
   margin: 0 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 /* Підвал */
